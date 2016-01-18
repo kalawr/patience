@@ -1,0 +1,16 @@
+# Iteration 2
+
+## Structure
+	* Incorporate ads
+	* Embed twitter feedback
+
+## Grapics
+	* Motion design
+	* Develop /wise/, /merit/ & /victorious/ themes
+
+## Workflow
+	* Testing
+	* Autoprefixing
+	* Minifying
+	* Host fonts myself
+	* More browser support

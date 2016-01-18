@@ -1,0 +1,12 @@
+composition:
+	info:
+		1.logo
+		2.description
+		3.current sales
+		4.links
+	main:
+		5.form
+		6.choices
+		7.message
+	optional:
+		8.twitter quotes

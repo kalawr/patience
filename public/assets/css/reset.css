@@ -1,0 +1,19 @@
+p.reset {
+	margin: 0;
+	padding: 0;
+}
+
+input.reset {
+	outline: 0;
+	border-style: solid;
+	background: transparent;
+}
+
+a.reset {
+	text-decoration: none;
+	color: inherit;
+}
+
+a.reset:hover {
+	color: inherit;
+}

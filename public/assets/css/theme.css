@@ -1,0 +1,73 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	color: #3c3c3c;
+}
+
+main {
+	/* this margin equals to the height of an input element and its bottom margin */
+	margin-top: 44.33333px;
+	margin-bottom: 44.33333px;
+	
+	/* so that children could be absolutely positioned */
+	position: relative;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.hide {
+	display: none;
+}
+
+.column {
+	max-width: 300px;
+	width: 80%;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.control,
+.btn,
+.border {
+	border-style: solid;
+	border-width: thin;
+	border-color: currentColor;
+	border-radius: 3.33333px;
+
+	padding: 10px;
+}
+
+.control,
+.btn {
+	margin-bottom: 3.33333px;
+}
+
+.control {
+	width: 100%;
+}
+
+.btn[disabled] {
+	color: #b5b5b5;
+	display: none;
+}
+
+#hint {
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	color: #b5b5b5;
+}
+
+#hint-actual-element,
+#hint-padding-element {
+	display: inline-block;
+}
+
+#hint-padding-element {
+	color: transparent;
+}

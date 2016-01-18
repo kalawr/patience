@@ -1,0 +1,122 @@
+$Grey    : rgb(158,158,138)
+$Black   : rgb(60,60,60)
+$Midnight: rgb(80,70,110)
+$Shadow  : rgb(61,54,84)
+$Sand    : rgb(235,227,217)
+$White   : rgb(248,248,248)
+
+$BW      : 2px
+
+::-webkit-input-placeholder
+	color: inherit
+
+html
+	box-sizing: border-box
+
+	height: 100%
+	width: 100%
+	
+	font: 150% / 1.5 "Open Sans Condensed", sans-serif
+	color: $Black
+
+	& *
+		box-sizing: inherit
+
+body
+	margin: 1rem
+
+	background-color: $Sand
+
+
+main
+	width: 11rem
+	margin: 0 auto 1rem
+
+	border: solid $BW 
+
+section
+	min-height: 4rem
+	margin: 1rem 0
+	padding: 0 0.5rem
+
+	&.description
+		p
+			margin: 0
+
+	&.form
+		padding: 0
+
+form
+	width: calc(100% + 1rem)
+	margin-left: -0.5rem
+
+	overflow: auto // float hack
+
+	input
+		display: block
+		float: left
+
+		margin: 0
+		padding: 0.5rem 1rem
+		
+		background-color: $Sand
+		border: solid $BW
+		outline: none
+
+		font: inherit
+		color: inherit
+
+		&#mail
+			width: 100%
+			margin-bottom: 0.5rem
+
+		&#pick
+			width: 80%
+
+			border-right: transparent
+
+		&[type="submit"]
+			clear: right
+
+			width: 20%
+			margin-left: 0
+
+			border-left: transparent
+
+			text-indent: -1000000px
+
+p.autocomplete
+	display: block
+	float: left
+
+	padding: 0.5rem 1rem
+	margin: 0 0 0 -80%
+
+	border: solid $BW transparent
+	z-index: 2
+
+	span.hint,
+	span.shift
+		z-index: -1
+
+	span.shift
+		color: transparent
+
+
+section.choices
+	ul
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+		margin: 0
+		padding: 0
+
+		list-style: none
+
+		li
+			flex: 1 0 5rem
+
+footer
+	width: 11em
+	margin: 0 auto

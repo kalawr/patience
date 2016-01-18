@@ -1,0 +1,7 @@
+experimental technologies I'd like to use:
+	flexbox				: 83.13%, vendor prefixing
+	rem					: 85.44%
+	calc
+	box-shadow
+	box-sizing
+	:valid

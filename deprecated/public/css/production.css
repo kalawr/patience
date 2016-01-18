@@ -1,0 +1,85 @@
+::-webkit-input-placeholder {
+  color: inherit; }
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  font: 150%/1.5 "Open Sans Condensed", sans-serif;
+  color: #3c3c3c; }
+  html * {
+    box-sizing: inherit; }
+
+body {
+  margin: 1rem;
+  background-color: #ebe3d9; }
+
+main {
+  width: 11rem;
+  margin: 0 auto 1rem;
+  border: solid 2px; }
+
+section {
+  min-height: 4rem;
+  margin: 1rem 0;
+  padding: 0 0.5rem; }
+  section.description p {
+    margin: 0; }
+  section.form {
+    padding: 0; }
+
+form {
+  width: calc(100% + 1rem);
+  margin-left: -0.5rem;
+  overflow: auto; }
+  form input {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background-color: #ebe3d9;
+    border: solid 2px;
+    outline: none;
+    font: inherit;
+    color: inherit; }
+    form input#mail {
+      width: 100%;
+      margin-bottom: 0.5rem; }
+    form input#pick {
+      width: 80%;
+      border-right: transparent; }
+    form input[type="submit"] {
+      clear: right;
+      width: 20%;
+      margin-left: 0;
+      border-left: transparent;
+      text-indent: -1000000px; }
+
+p.autocomplete {
+  display: block;
+  float: left;
+  padding: 0.5rem 1rem;
+  margin: 0 0 0 -80%;
+  border: solid 2px transparent;
+  z-index: 2; }
+  p.autocomplete span.hint,
+  p.autocomplete span.shift {
+    z-index: -1; }
+  p.autocomplete span.shift {
+    color: transparent; }
+
+section.choices ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  section.choices ul li {
+    flex: 1 0 5rem; }
+
+footer {
+  width: 11em;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=production.css.map */

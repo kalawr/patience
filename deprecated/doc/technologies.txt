@@ -1,0 +1,21 @@
+HTTP
+SMTP
+DNS
+DB
+ruby
+	thin
+	rack
+html
+SVG
+css
+javascript
+	MVC
+	ajax
+
+extras:
+	visual design
+	UI
+	sleek english
+	server configuration
+	version controlling
+	development workflow

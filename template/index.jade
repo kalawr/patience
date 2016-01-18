@@ -1,0 +1,81 @@
+//- 
+	The template will require:
+
+	{
+		headline: "",
+		description: "",
+		title: "",
+
+		seo: {
+			author: "",
+			description: "",
+			keywords: ""
+		},
+
+		email : {
+			caption: "",
+			error: ""
+		},
+
+		password: {
+			caption: "",
+			error: ""
+		}
+	}
+
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		//- Forces IEs to apply the most recent rules it knows (i.e. no-compatibility mode).
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		//- Cornerstone of all responsive behaviour.
+		meta(name='viewport' content='width=device-width,initial-scale=1')
+
+		title= title
+
+		//- You will probably have to collapse all these into a single file.
+		link(rel='stylesheet' href='assets/css/normalize.css')
+		link(rel='stylesheet' href='assets/css/reset.css')
+		//- For glyphicons solely.
+		link(rel='stylesheet' href='assets/css/bootstrap.css')
+		link(rel='stylesheet' href='assets/css/theme.css')
+		link(rel='stylesheet' href='assets/css/transitions.css')
+		link(rel='stylesheet' href='assets/css/message.css')
+	body
+
+		main.column
+			.brand
+				h1= headline
+				p= description
+
+			form(action='post' method='post')
+				input#email-input-element(type='text').reset.control
+
+				.wrapper
+					#hint
+						#hint-padding-element
+						#hint-actual-element
+					input#choice-input-element(type='text').reset.control
+				
+				input#submit-input-element(type='submit' disabled).reset.btn
+
+			.message.border.hide
+				a(href='#').reset.message-close
+					span.glyphicon.glyphicon-remove-circle
+				h1.message-title
+					| Fuck yeah!
+				p.reset.message-content
+					| Your inputs seemed valid so we accepted them. It's done!
+
+			#choices-container-element
+
+		footer
+			script(type='text/javascript' src='assets/js/underscore.js')
+			script(type='text/javascript' src='assets/js/helpers.js')
+			// You will want to break that into multiple modules (files) in future.
+			script(type='text/javascript' src='assets/js/import.js')
+			script(type='text/javascript' src='assets/js/validate.js')
+			script(type='text/javascript' src='assets/js/submit.js')
+			script(type='text/javascript' src='assets/js/popup.js')
+			script(type='text/javascript' src='assets/js/view.js')

@@ -1,0 +1,26 @@
+to do:
+	js:
+		Develop UI
+			'Tab' key to accept a suggestion
+			'Vi' bug
+		View.template
+		Cache
+		Accept skins
+		Obsolete browser message: "Your browser is not supported and the site is not displayed correctly. Please, consider a transition."
+		
+	graphics:
+		Соотношения: модульная сеть
+		Цвета: применить палитру
+		Logo
+		Additional SVG elements (x & 'Enter')
+		Design responsive behaviour
+
+	workflow:
+		Adapt Git
+		Documentation
+			CSS Blueprint
+
+	back-end:
+		Database
+		SMTP server
+		SMTP script

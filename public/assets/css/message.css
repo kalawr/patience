@@ -1,0 +1,29 @@
+.message {
+	position: absolute;
+	top: 0; left: 0;
+
+	background-color: white;
+}
+
+.message-title {
+	font-size: 150%;
+	margin: 0.25em 0;
+}
+
+.message-close {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	margin: 5px;
+	padding: 5px;
+}
+
+.message-close > svg {
+	width: 12px;
+	height: 12px;
+
+	stroke: #3c3c3c;
+	stroke-width: 1px;
+}
